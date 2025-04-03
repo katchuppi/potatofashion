@@ -1,0 +1,197 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C9C9C9;
+    color: #333;
+}
+
+/* Header Navigation */
+header {
+    background: linear-gradient(45deg, #E4A85A, #DAA156);
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 20px;
+    transition: transform 0.3s ease-in-out;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+nav ul li:hover {
+    transform: scale(1.1);
+}
+nav ul li a:hover {
+    color: #FFFADE;
+}
+
+/* Content Area */
+.content {
+    padding-top: 80px; /* Adjust to avoid overlap with fixed header */
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards ease-in-out;
+}
+
+/* Home Page Logo Styling */
+.home-logo {
+    display: block;
+    margin: 40px auto;
+    max-width: 150px;
+    height: auto;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: zoomIn 1s forwards ease-in-out 0.5s;
+}
+
+/* Buttons */
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+button:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Scroll Animation */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s, transform 0.8s;
+}
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Home Page Background */
+#home {
+    background: url('images/home-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+}
+
+/* Section Styling */
+section {
+    padding: 50px;
+}
+
+/* About Page */
+.about-section {
+    background: white;
+    padding: 50px;
+}
+
+/* Services Page */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    background: white;
+}
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.product button {
+    background: #BB8FDC;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+.product button:hover {
+    background: #976EB6;
+}
+
+/* Contact Page */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+form button {
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+form button:hover {
+    background: #555;
+}
+
+/* More Products Button */
+.more-products-btn, .back-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    background: #BB8FDC;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.more-products-btn:hover, .back-btn:hover {
+    background: #976EB6;
+}

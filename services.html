@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Tops (on Sale!)</h1>
+        <div class="products">
+            <div class="product">
+                <img src="images/product1.jpg" alt="Product 1">
+                <h3>Off-Shoulder Corset Long Sleeves Top</h3>
+                <p>Php 89.99</p>
+                <button onclick="buyProduct('Product 1', 89.99)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="images/product2.jpg" alt="Product 2">
+                <h3>Purple Starry Night Cardigan</h3>
+                <p>Php 115.00</p>
+                <button onclick="buyProduct('Product 2', 150.00)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="images/product3.jpg" alt="Product 3">
+                <h3>Rosy Pink  Corset Top</h3>
+                <p>Php 79.99</p>
+                <button onclick="buyProduct('Product 3', 79.99)">Buy Now</button>
+            </div>
+        </div>
+
+<a href="more-products.html" class="more-products-btn">View More Products</a>
+    </section>
+
+    <script>
+        function buyProduct(name, price) {
+            alert(`You have purchased ${name} for $${price}`);
+        }
+    </script>
+</body>
+</html>

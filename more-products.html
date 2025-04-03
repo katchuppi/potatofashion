@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h1>Other Products on Sale ~</h1>
+        <div class="products">
+            <div class="product">
+                <img src="images/product4.jpg" alt="Loose Baggy Cargo Jeans">
+                <h3>Loose Baggy Cargo Jeans</h3>
+                <p>Php 199.00 </p>
+                <button onclick="buyProduct('Loose Baggy Cargo Jeans', 199.00)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="images/product5.jpg" alt="Aesthetic Corset Black Skirt">
+                <h3>Aesthetic Corset Black Skirt</h3>
+                <p>Php 67.99</p>
+                <button onclick="buyProduct('Aesthetic Corset Black Skirt, 67.99)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="images/product6.jpg" alt="Cute Bowtie Soft Skirt">
+                <h3>Cute Bowtie Soft Skirt"</h3>
+                <p>Php 64.00</p>
+                <button onclick="buyProduct('Cute Bowtie Soft Skirt"', 64.00)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="images/product7.jpg" alt="Pink White Corset Skirt">
+                <h3>Pink White Corset Skirt</h3>
+                <p>Php 67.99</p>
+                <button onclick="buyProduct('Pink White Corset Skirt', 67.99)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="images/product8.jpg" alt="Simple Beige Uniform Skirt">
+                <h3>Simple Beige Uniform Skirt</h3>
+                <p>Php 60.00</p>
+                <button onclick="buyProduct('Simple Beige Uniform Skirt', 60.00)">Buy Now</button>
+            </div>
+        <div class="product">
+                <img src="images/product9.jpg" alt="Y2K Star Earrings">
+                <h3>Y2K Star Earrings</h3>
+                <p>Php 25.00</p>
+                <button onclick="buyProduct('Y2K Star Earrings, 25.00)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="images/product10,jpg" alt="White Star Bracelet">
+                <h3>White Star Bracelet</h3>
+                <p>Php 35.00</p>
+                <button onclick="buyProduct('White Star Bracelet', 35.00)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="images/product11.jpg" alt="Aeshetic Star Earrings">
+                <h3>Aesthetic Star Earrings</h3>
+                <p>Php 20.00</p>
+                <button onclick="buyProduct('Aesthetic Star Earrings', 20.00)">Buy Now</button>
+            </div>
+        </div>
+
+        <a href="services.html" class="back-btn">Back to Services</a>
+    </section>
+
+    <script>
+        function buyProduct(name, price) {
+            alert(`You have purchased ${name} for $${price}`);
+        }
+    </script>
+</body>
+</html>
